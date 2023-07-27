@@ -1,0 +1,35 @@
+{
+  "currencies": [
+    {
+      "name": "Dollar",
+      "price": 26.1,
+      "image": "USD.png"
+    },
+    {
+      "name": "Euro",
+      "price": 28.4,
+      "image": "EUR.png"
+    },
+    {
+      "name": "Pound",
+      "price": 33.0,
+      "image": "GBP.png"
+    },
+    {
+      "name": "Bitcoin",
+      "price": 798.821,
+      "image": "BTC.png"
+    },
+    {
+      "name": "Ethereum",
+      "price": 51.232,
+      "image": "ETH.png"
+    },
+    {
+      "name": "Gold",
+      "price": 1602.0,
+      "image": "GOLD.png"
+    }
+  ]
+}
+
