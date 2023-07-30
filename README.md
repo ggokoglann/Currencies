@@ -3,9 +3,6 @@
 
 Para Bak, popüler para birimlerinin anlık değerleri türk lirası cinsinden gösteren bir uygulama.
 
-
-## Ekran Görüntüleri
-
 ![Uygulama Ekran Görüntüsü](https://raw.githubusercontent.com/ggokoglann/ParaBak/main/Currencies%20Design/App%20Store.png)
 
   
