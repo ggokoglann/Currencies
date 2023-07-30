@@ -1,5 +1,5 @@
 
-# Para Bak
+# Para Bak - Para Birimleri
 
 Para Bak, popüler para birimlerinin anlık değerleri türk lirası cinsinden gösteren bir uygulama.
 
