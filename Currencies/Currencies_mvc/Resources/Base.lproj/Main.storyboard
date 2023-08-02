@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dex-wU-uaM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Medium.ttf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Döviz Çevirici-->
+        <scene sceneID="NQf-Lu-00W">
+            <objects>
+                <viewController id="0bG-R0-6Nj" customClass="CurrencyExchangerViewController" customModule="Currencies_mvc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cO6-Fj-aRt">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Miktar Giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-wv-mDp">
+                                <rect key="frame" x="97.666666666666686" y="539" width="195" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="7oJ-2Z-29r"/>
+                                    <constraint firstAttribute="height" constant="34" id="9L2-7L-Ovh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcY-ES-Fay">
+                                <rect key="frame" x="125" y="581" width="140" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Z5j-n6-osW"/>
+                                    <constraint firstAttribute="height" constant="70" id="h8e-0s-hJn"/>
+                                </constraints>
+                                <color key="tintColor" red="0.039215686270000001" green="0.69803921570000005" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Hesapla">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.69803921570000005" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="30"/>
+                                    <color key="baseBackgroundColor" red="0.039215686270000001" green="0.69803921570000005" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exchange:" destination="0bG-R0-6Nj" eventType="touchUpInside" id="FNK-wd-ZWY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-TA-RjM">
+                                <rect key="frame" x="78" y="152" width="234" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="Z3d-kj-5MG"/>
+                                    <constraint firstAttribute="width" constant="234" id="uAR-fG-wzK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Döviz Çevirici" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94W-nu-TSB">
+                                <rect key="frame" x="62" y="66" width="266" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="She-Vz-mKI"/>
+                                    <constraint firstAttribute="width" constant="266" id="g1e-Rq-Xur"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhi-A8-BwX">
+                                <rect key="frame" x="89.666666666666686" y="478" width="211" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Ixl-Ax-MNr"/>
+                                    <constraint firstAttribute="width" constant="211" id="hyw-Q1-3pS"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q45-Tt-SZl">
+                                <rect key="frame" x="78" y="411" width="234" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="ioA-fr-csA"/>
+                                    <constraint firstAttribute="height" constant="59" id="wR6-aW-pKi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dlQ-wL-pp4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hhc-wv-mDp" firstAttribute="top" secondItem="dhi-A8-BwX" secondAttribute="bottom" constant="-7" id="3jt-WE-guc"/>
+                            <constraint firstItem="dhi-A8-BwX" firstAttribute="top" secondItem="q45-Tt-SZl" secondAttribute="bottom" constant="8" symbolic="YES" id="4zd-7D-i7B"/>
+                            <constraint firstItem="94W-nu-TSB" firstAttribute="top" secondItem="dlQ-wL-pp4" secondAttribute="top" constant="19" id="9Gs-dQ-AbY"/>
+                            <constraint firstItem="94W-nu-TSB" firstAttribute="centerX" secondItem="dlQ-wL-pp4" secondAttribute="centerX" id="F0j-fV-H6Y"/>
+                            <constraint firstItem="L4b-TA-RjM" firstAttribute="top" secondItem="94W-nu-TSB" secondAttribute="bottom" constant="25" id="Lk3-vq-ilt"/>
+                            <constraint firstItem="fcY-ES-Fay" firstAttribute="centerX" secondItem="dlQ-wL-pp4" secondAttribute="centerX" id="M0U-lG-OWj"/>
+                            <constraint firstItem="fcY-ES-Fay" firstAttribute="top" secondItem="Hhc-wv-mDp" secondAttribute="bottom" constant="8" symbolic="YES" id="QYR-rS-tYW"/>
+                            <constraint firstItem="Hhc-wv-mDp" firstAttribute="centerX" secondItem="fcY-ES-Fay" secondAttribute="centerX" id="YrB-4y-teL"/>
+                            <constraint firstItem="q45-Tt-SZl" firstAttribute="centerX" secondItem="dhi-A8-BwX" secondAttribute="centerX" id="cKe-c4-BYi"/>
+                            <constraint firstItem="L4b-TA-RjM" firstAttribute="centerX" secondItem="94W-nu-TSB" secondAttribute="centerX" id="foL-LI-PTb"/>
+                            <constraint firstItem="dhi-A8-BwX" firstAttribute="centerX" secondItem="Hhc-wv-mDp" secondAttribute="centerX" id="mdS-Z4-gEw"/>
+                            <constraint firstItem="dlQ-wL-pp4" firstAttribute="bottom" secondItem="fcY-ES-Fay" secondAttribute="bottom" constant="110" id="xyG-ka-cYc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Döviz Çevirici" id="teC-wg-LJM">
+                        <imageReference key="image" image="dollarsign.circle" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="changeTextfield" destination="Hhc-wv-mDp" id="P2k-Uv-UCx"/>
+                        <outlet property="currencyLabel" destination="q45-Tt-SZl" id="1Yx-QI-5EI"/>
+                        <outlet property="hesaplaButton" destination="fcY-ES-Fay" id="6xS-Jc-cBU"/>
+                        <outlet property="nameLabel" destination="94W-nu-TSB" id="Vmc-82-RkA"/>
+                        <outlet property="pickerView" destination="dhi-A8-BwX" id="GDG-Md-T5b"/>
+                        <outlet property="resultLabel" destination="L4b-TA-RjM" id="rbf-Dp-YKN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mIf-lQ-T1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783.2" y="-1104.1979010494754"/>
+        </scene>
+        <!--Para Bak-->
+        <scene sceneID="ZlB-SZ-nvS">
+            <objects>
+                <viewController id="Zs7-6A-Euc" customClass="CurrenciesView" customModule="Currencies_mvc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OA8-mU-fhL">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para Birimleri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQa-CV-sGU">
+                                <rect key="frame" x="81" y="66" width="228" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="6VX-wJ-l6H"/>
+                                    <constraint firstAttribute="height" constant="46" id="BDZ-AU-G2o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vHq-FP-9pI">
+                                <rect key="frame" x="21.666666666666657" y="120" width="347" height="509"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="347" id="JVl-Za-Wna"/>
+                                    <constraint firstAttribute="height" constant="509" id="QNm-I0-G0a"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="seW-fH-0L9">
+                                    <size key="itemSize" width="346.66666666666669" height="70"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CurrencyCell" id="piq-eM-BsC" customClass="CurrencyCell" customModule="Currencies_mvc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="346.66666666666669" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="346.66666666666669" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25C-jG-1at">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GM-26-4nc">
+                                                    <rect key="frame" x="81" y="8" width="94" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rG-i0-Ddz">
+                                                    <rect key="frame" x="148" y="8" width="186" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="826-S9-LRE">
+                                                    <rect key="frame" x="82" y="39" width="97" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yY-wO-GuL">
+                                                    <rect key="frame" x="261" y="39" width="70" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="346.66666666666669" height="70"/>
+                                        <connections>
+                                            <outlet property="changeLabel" destination="4yY-wO-GuL" id="WE0-5z-7Ke"/>
+                                            <outlet property="imageView" destination="25C-jG-1at" id="rY2-5A-aZs"/>
+                                            <outlet property="nameExtLabel" destination="826-S9-LRE" id="EYu-E4-vI9"/>
+                                            <outlet property="nameLabel" destination="3GM-26-4nc" id="CVL-qv-FAy"/>
+                                            <outlet property="priceLabel" destination="1rG-i0-Ddz" id="P8h-cr-472"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Qw-PT-6Tw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="vHq-FP-9pI" firstAttribute="centerX" secondItem="lQa-CV-sGU" secondAttribute="centerX" id="FRS-7y-N7c"/>
+                            <constraint firstItem="lQa-CV-sGU" firstAttribute="centerX" secondItem="7Qw-PT-6Tw" secondAttribute="centerX" id="HZA-I9-EST"/>
+                            <constraint firstItem="lQa-CV-sGU" firstAttribute="top" secondItem="7Qw-PT-6Tw" secondAttribute="top" constant="19" id="aYe-q9-TZG"/>
+                            <constraint firstItem="vHq-FP-9pI" firstAttribute="top" secondItem="lQa-CV-sGU" secondAttribute="bottom" constant="8" symbolic="YES" id="vhi-2L-tk3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Para Bak" id="34F-br-Bhg">
+                        <imageReference key="image" image="turkishlirasign.circle" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="collectionView" destination="vHq-FP-9pI" id="y4W-Su-Jhj"/>
+                        <outlet property="currenciesLabel" destination="lQa-CV-sGU" id="DWT-CO-5tL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ln-ng-0ky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783.2" y="-447.52623688155927"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PNf-9x-83X">
+            <objects>
+                <tabBarController id="dex-wU-uaM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="erT-Kx-6tB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.039215686270000001" green="0.69803921570000005" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.039215686270000001" green="0.69803921570000005" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.039215686270000001" green="0.69803921570000005" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Zs7-6A-Euc" kind="relationship" relationship="viewControllers" id="AGu-z0-zOi"/>
+                        <segue destination="0bG-R0-6Nj" kind="relationship" relationship="viewControllers" id="KYc-s3-uEJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wCd-F0-KVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="-756"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dollarsign.circle" catalog="system" width="128" height="123"/>
+        <image name="turkishlirasign.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
